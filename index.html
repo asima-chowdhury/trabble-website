@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabble - Tour, Travel & Travel Agency Template</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Maven+Pro:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- bootstrap style -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- custom style -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <!----------- Navigation-area Start ----------->
+  <header class="navigation-area fixed-top bg-dark">
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active px-2">
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#package">Package List</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!----------- Navigation-area End ----------->
+  <!----------- slider-area Start ----------->
+  <section class="slider-area padding-bt-58" id="home">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner dark">
+        <div class="carousel-item active">
+          <img src="images/slider/slider-1.jpg" class="d-block w-100 img-fluid" alt="slider">
+          <div class="carousel-caption d-none">
+            <h1 class="text-capitalize">we make awesome tours</h1>
+            <p class="d-none d-md-block">Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.<br>Lorem Ipsum has been
+              the industry's standard .</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/slider/slider-2.jpg" class="d-block w-100 img-fluid" alt="slider">
+          <div class="carousel-caption d-none">
+            <h2>“Jobs fill your pocket<br> but<br> Adventures fill your soul.”</h2>
+            <p class="d-none d-md-block">Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.<br>Lorem Ipsum has been
+              the industry's standard .</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/slider/slider-3.jpg" class="d-block w-100 img-fluid" alt="slider">
+          <div class="carousel-caption d-none">
+            <h2>“People don't take trips,<br> trips take people.”</h2>
+            <p class="d-none d-md-block">Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.<br>Lorem Ipsum has been
+              the industry's standard .</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <!----------- slider-area End ----------->
+  <!----------- welcome-area Start ----------->
+  <section class="welcome-area padding-bt-100" id="about">
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-6">
+          <div class="welcome-area-image">
+            <div class="single-image">
+              <img src="images/welcome/welcome-1.jpg" alt="" class="img-thumbnail img-responsive">
+            </div>
+            <div class="overlay-image d-none d-sm-none d-md-block">
+              <img src="images/welcome/welcome-2.jpg" alt="" class="img-thumbnail img-responsive">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="welcome-area-article">
+            <div class="section-title text-center">
+              <h2>Welcome To Trabble</h2>
+            </div>
+            <div class="section-article text-center mt-2 p-3">
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismody tincidunt ut
+                laoreet dolore magna aliquam erat volutpat. Ut wisi enim adi minim veniam, qu nostrud exerci tation
+                ullamcorperea commodo consequat utm euismod tincidunt ut laore dolore magna aliquam erat volutpat.</p>
+              <button type="button" class="btn btn-success custom-button my-2">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!----------- welcome-area End ----------->
+  <!----------- package-area Start ----------->
+  <section class="package-area padding-bt-100 bg-image" id="package">
+    <div class="container">
+      <div class="row d-flex justify-content-center text-white">
+        <div class="section-title section-title-white text-center">
+          <h2>Let’s Enjoy Excellent Tour Packages</h2>
+        </div>
+        <div class="section-article text-center">
+          <p>Lorem ipsum dolor sitp amet conspectetuer adipiscing elit sed diam nonummy nibh euismody tincidunt ut
+            laoree.</p>
+        </div>
+      </div>
+      <div class="row pt-4">
+        <div class="card-deck">
+          <div class="col-md-4">
+            <div class="card single-package mb-3">
+              <img src="images/packages/package-1.jpg" class="img-fluid package-place" alt="package">
+              <span class="package-price font-weight-bold text-white bg-green">$160</span>
+              <div class="card-body package-details">
+                <h4 class="card-title">Dubai – Stunning Places</h4>
+                <p><i class="far fa-clock"></i> 4-Days, 5-Nights Stay</p>
+                <div class="details">
+                  <p><span class="font-weight-bold">Included</span>: Flight Facility, 5 Star Hotel, Sightseeing,
+                    Transfers, Meals.</p>
+                </div>
+              </div>
+              <div class="card-footer package-ratings-review d-flex justify-content-between">
+                <div class="package-rating">
+                  <img src="images/icons/star.png" alt="package-rate" class="img-fluid">
+                  <img src="images/icons/star.png" alt="package-rate" class="img-fluid">
+                  <img src="images/icons/star.png" alt="package-rate" class="img-fluid">
+                  <img src="images/icons/star.png" alt="package-rate" class="img-fluid">
+                  <img src="images/icons/star.png" alt="package-rate" class="img-fluid">
+                </div>
+                <div class="package-review">
+                  <h6 class="d-inline">27 reviews</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card single-package mb-3">
+              <img src="images/packages/package-2.jpg" class="img-fluid package-place" alt="package">
+              <span class="package-price font-weight-bold text-white bg-green">$170</span>
+              <div class="card-body package-details">
+                <h4 class="card-title">Paris – Stunning Places</h4>
+                <p><i class="far fa-clock"></i> 4-Days, 5-Nights Stay</p>
+                <div class="details">
+                  <p><span class="font-weight-bold">Included</span>: Flight Facility, 5 Star Hotel, Sightseeing,
+                    Transfers, Meals.</p>
+                </div>
+              </div>
+              <div class="card-footer package-ratings-review d-flex justify-content-between">
+                <div class="package-rating">
+                  <img src="images/icons/star.png" alt="package-rate" class="img-fluid">
+                  <img src="images/icons/star.png" alt="package-rate" class="img-fluid">
+                  <img src="images/icons/star.png" alt="package-rate" class="img-fluid">
+                  <img src="images/icons/star.png" alt="package-rate" class="img-fluid">
+                  <img src="images/icons/star.png" alt="package-rate" class="img-fluid">
+                </div>
+                <div class="package-review">
+                  <h6 class="d-inline">29 reviews</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card single-package mb-3">
+              <img src="images/packages/package-3.jpg" class="img-fluid package-place" alt="package">
+              <span class="package-price font-weight-bold text-white bg-green">$150</span>
+              <div class="card-body package-details">
+                <h4 class="card-title">Italy – Stunning Places</h4>
+                <p><i class="far fa-clock"></i> 4-Days, 5-Nights Stay</p>
+                <div class="details">
+                  <p><span class="font-weight-bold">Included</span>: Flight Facility, 5 Star Hotel, Sightseeing,
+                    Transfers, Meals.</p>
+                </div>
+              </div>
+              <div class="card-footer package-ratings-review d-flex justify-content-between">
+                <div class="package-rating">
+                  <img src="images/icons/star.png" alt="package-rate" class="img-fluid">
+                  <img src="images/icons/star.png" alt="package-rate" class="img-fluid">
+                  <img src="images/icons/star.png" alt="package-rate" class="img-fluid">
+                  <img src="images/icons/star.png" alt="package-rate" class="img-fluid">
+                  <img src="images/icons/star.png" alt="package-rate" class="img-fluid">
+                </div>
+                <div class="package-review">
+                  <h6 class="d-inline">28 reviews</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!----------- package-area End ----------->
+  <!----------- popular-destinations-area Start ------------->
+  <section class="popular-destination padding-bt-100">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="section-title text-center">
+          <h2>Most Popular Travel Destinations</h2>
+        </div>
+        <div class="section-article text-center">
+          <p>Lorem ipsum dolor sitp amet conspectetuer adipiscing elit sed diam nonummy nibh euismody tincidunt ut
+            laoree.</p>
+        </div>
+      </div>
+      <div class="row pt-5">
+        <div class="col-md-3 col-sm-6 col-xm-6 mb-3">
+          <div class="single-destination">
+            <div class="destination-img">
+              <img src="images/destination/destination-1.jpg" alt="" class="img-fluid rounded">
+            </div>
+            <div class="destination-article d-flex justify-content-center align-items-center text-white">
+              <h4><i class="fas fa-map-marker-alt pr-2 text-success"></i>London</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xm-6 mb-3">
+          <div class="single-destination">
+            <div class="destination-img">
+              <img src="images/destination/destination-2.jpg" alt="" class="img-fluid rounded">
+            </div>
+            <div class="destination-article d-flex justify-content-center align-items-center text-white">
+              <h4><i class="fas fa-map-marker-alt pr-2 text-success"></i>New York</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="single-destination">
+            <div class="destination-img">
+              <img src="images/destination/destination-3.jpg" alt="" class="img-fluid rounded">
+            </div>
+            <div class="destination-article d-flex justify-content-center align-items-center text-white">
+              <h4><i class="fas fa-map-marker-alt pr-2 text-success"></i>Paris</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="single-destination">
+            <div class="destination-img">
+              <img src="images/destination/destination-4.jpg" alt="" class="img-fluid rounded">
+            </div>
+            <div class="destination-article d-flex justify-content-center align-items-center text-white">
+              <h4><i class="fas fa-map-marker-alt pr-2 text-success"></i>Bali</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------------- popular-destinations-area End ----------->
+  <!----------- discount-package-area Start ----------->
+  <section class="discount-package padding-bt-100 bg-image text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="discount-article">
+            <h2>Discount<span class="orange-highlight"> 20-30% Off</span></h2>
+            <p>Discount 20-30% Off
+              Lorem ipsum dolor sit ameit, consectetuer adipiscing elity <br> sed your diam nonummy nibh euismody
+              tincidunt utyou <br> laoreet dolore magn aliquam erat volutpat. Ut wisi yuo tation <br> ullamcorperea
+              commodo con....</p>
+            <button type="button" class="btn btn-success custom-button bg-orange">Book Now!</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!----------- discount-package-area End ----------->
+  <!----------- best-services-area Start ----------->
+  <section class="best-services padding-bt-100" id="services">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="section-title text-center">
+          <h2>Why We Are The Best</h2>
+        </div>
+        <div class="section-article text-center">
+          <p>Lorem ipsum dolor sitp amet conspectetuer adipiscing elit sed diam nonummy nibh euismody tincidunt ut
+            laoree.</p>
+        </div>
+      </div>
+      <div class="row pt-5">
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="single-service text-center p-3 rounded">
+            <img src="images/icons/service-1.png" alt="" class="img-fluid ">
+            <h5 class="my-2">Travel Arrangements</h5>
+            <p>Lorem ipsum dolor sit ametpr consect adiu piscing eli sed diam nonum euismo.</p>
+            <a href="#" class="text-decoration-none green-highlight font-weight-bold">Read More</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="single-service text-center p-3 rounded">
+            <img src="images/icons/service-2.png" alt="" class="img-fluid ">
+            <h5 class="my-2">Best Price Guarantee</h5>
+            <p>Lorem ipsum dolor sit ametpr consect adiu piscing eli sed diam nonum euismo.</p>
+            <a href="#" class="text-decoration-none green-highlight font-weight-bold">Read More</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="single-service text-center p-3 rounded">
+            <img src="images/icons/service-3.png" alt="" class="img-fluid ">
+            <h5 class="my-2">Be Happy Clients</h5>
+            <p>Lorem ipsum dolor sit ametpr consect adiu piscing eli sed diam nonum euismo.</p>
+            <a href="#" class="text-decoration-none green-highlight font-weight-bold">Read More</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="single-service text-center p-3 rounded">
+            <img src="images/icons/service-4.png" alt="" class="img-fluid ">
+            <h5 class="my-2">Travel Insurance</h5>
+            <p>Lorem ipsum dolor sit ametpr consect adiu piscing eli sed diam nonum euismo.</p>
+            <a href="#" class="text-decoration-none green-highlight font-weight-bold">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!----------- best-services-area End ----------->
+  <!----------- testimonial-area Start ----------->
+  <section class="testimonial-area padding-bt-58">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="section-title text-center">
+          <h2>Testimonial</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="single-testimonial bg-image text-white text-center  padding-bt-58">
+            <div class="testimonial-content">
+              <img src="images/testimonial/testimonial-person.jpg" class="img-fluid rounded-circle mb-5"
+                alt="testimonial">
+              <h5>Jhonthan Smith</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius commodi, consequatur debitis <br>
+                aliquid
+                cupiditate laboriosam fugit esse architecto voluptatibus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!----------- testimonial-area End ----------->
+  <!----------- gallery-area Start ----------->
+  <section class="best-services padding-bt-100" id="gallery">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="section-title text-center">
+          <h2>Gallery From Travelars</h2>
+        </div>
+        <div class="section-article text-center">
+          <p>Lorem ipsum dolor sitp amet conspectetuer adipiscing elit sed diam nonummy nibh euismody tincidunt ut
+            laoree.</p>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-md-6">
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <div class="single-gallery">
+                <img src="images/gallery/gallery-1.jpg" alt="" class="img-fluid rounded img-thumbnail">
+              </div>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-md-6">
+              <div class="single-gallery">
+                <img src="images/gallery/gallery-2.jpg" alt="" class="img-fluid rounded img-thumbnail">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="single-gallery">
+                <img src="images/gallery/gallery-3.jpg" alt="" class="img-fluid rounded img-thumbnail">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row my-3">
+            <div class="col-md-6">
+              <div class="single-gallery mb-4">
+                <img src="images/gallery/gallery-4.jpg" alt="" class="img-fluid rounded img-thumbnail">
+              </div>
+              <div class="single-gallery">
+                <img src="images/gallery/gallery-5.jpg" alt="" class="img-fluid rounded img-thumbnail">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="single-gallery mb-4">
+                <img src="images/gallery/gallery-6.jpg" alt="" class="img-fluid rounded img-thumbnail">
+              </div>
+              <div class="single-gallery my-2">
+                <img src="images/gallery/gallery-7.jpg" alt="" class="img-fluid rounded img-thumbnail">
+              </div>
+              <div class="single-gallery my-2">
+                <img src="images/gallery/gallery-8.jpg" alt="" class="img-fluid rounded img-thumbnail">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!----------- gallery-area End ----------->
+  <!----------- subscribe-area Start ----------->
+  <section class="subscribe-area padding-bt-100 bg-image">
+    <div class="container">
+      <div class="row d-flex justify-content-center text-white">
+        <div class="section-title section-title-white text-center section-title-red">
+          <h2>What Happy Travelers Say About Us</h2>
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col-md-12 d-flex align-item-center justify-content-center">
+          <div class="subscribe-article">
+            <form class="d-flex justify-content-center ">
+              <input type="email" class="form-control rounded-left" placeholder="Enter Your Email To Subscribe">
+              <button type="submit" class="btn btn-primary rounded-right">SEND</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!----------- subscribe-area End ----------->
+  <!----------- blog-area Start ----------->
+  <section class="blog-area padding-bt-100 bg-light" id="blog">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="section-title text-center">
+          <h2>Travel Blog And Expert Advice</h2>
+        </div>
+        <div class="section-article text-center">
+          <p>Lorem ipsum dolor sitp amet conspectetuer adipiscing elit sed diam nonummy nibh euismody tincidunt ut
+            laoree.</p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="card-deck">
+          <div class="col-md-4">
+            <div class="card single-blog mb-2">
+              <img src="images/travel-blog/blog-1.jpg" class="card-img-top blog-img" alt="blog">
+              <div class="card-body blog-body">
+                <div class="blog-content d-flex pb-3">
+                  <small class="flex-grow-1">22 July, 2020</small>
+                  <small class="pl-3"><i class="fas fa-comments"></i> 3</small>
+                  <small class="pl-3"><i class="far fa-heart"></i> 43</small>
+                </div>
+                <h5 class="card-title green-highlight">Tips For Taking A Long-Term Trip</h5>
+                <p class="card-text text-secondary">Lorem ipsum dolor sit amet consepctetur adipiscing elit Etiam at
+                  ipsum at ligula vestibulum sodales Sed luctus.</p>
+              </div>
+              <div class="card-footer blog-readMore">
+                <button type="button" class="btn btn-outline-success">Read More &rarr;</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card single-blog mb-2">
+              <img src="images/travel-blog/blog-2.jpg" class="card-img-top blog-img" alt="blog">
+              <div class="card-body blog-body">
+                <div class="blog-content d-flex pb-3">
+                  <small class="flex-grow-1">22 July, 2020</small>
+                  <small class="pl-3"><i class="fas fa-comments"></i> 3</small>
+                  <small class="pl-3"><i class="far fa-heart"></i> 43</small>
+                </div>
+                <h5 class="card-title green-highlight">Tips For Taking A Long-Term Trip</h5>
+                <p class="card-text text-secondary">Lorem ipsum dolor sit amet consepctetur adipiscing elit Etiam at
+                  ipsum at ligula vestibulum sodales Sed luctus.</p>
+              </div>
+              <div class="card-footer blog-readMore">
+                <button type="button" class="btn btn-outline-success">Read More &rarr;</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card single-blog mb-2">
+              <img src="images/travel-blog/blog-3.jpg" class="card-img-top blog-img" alt="blog">
+              <div class="card-body blog-body">
+                <div class="blog-content d-flex pb-3">
+                  <small class="flex-grow-1">22 July, 2020</small>
+                  <small class="pl-3"><i class="fas fa-comments"></i> 3</small>
+                  <small class="pl-3"><i class="far fa-heart"></i> 43</small>
+                </div>
+                <h5 class="card-title green-highlight">Tips For Taking A Long-Term Trip</h5>
+                <p class="card-text text-secondary">Lorem ipsum dolor sit amet consepctetur adipiscing elit Etiam at
+                  ipsum at ligula vestibulum sodales Sed luctus.</p>
+              </div>
+              <div class="card-footer blog-readMore">
+                <button type="button" class="btn btn-outline-success">Read More &rarr;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!----------- blog-area End ----------->
+  <!----------- footer-area Start ------------>
+  <section class="footer-area text-white">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-3">
+          <div class="footer-left mb-3">
+            <a href="#"><img src="images/logo.png" alt="logo"></a>
+            <p class="py-3">Lorem ipsum dolor sit amet conset ctetur adipiscin elit Etiam at ipsum at ligula vestibulum
+              sodales Sed is luctus orci vel nibh.</p>
+            <p><img src="images/icons/map.png" alt="map" class="mr-3 img-fluid">Seventh Avenue New York</p>
+            <p><img src="images/icons/phone.png" alt="phone" class="mr-3 img-fluid">+123-456-7890</p>
+            <p><img src="images/icons/gmail.png" alt="email" class="mr-3 img-fluid">info@example.com</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-news mb-3">
+            <h3>Recent News</h3>
+            <div class="news-content mb-2">
+              <a href="#" class="text-decoration-none text-white d-flex justify-content-center align-items-center">
+                <img src="images/footer/footer-news1.jpg" alt="footer-news" class="rounded mr-2">
+                <p>A Clean Website Gives More Experience<br><small class="green-highlight">22 July, 2020</small></p>                
+              </a>
+            </div>
+            <div class="news-content mb-2">
+              <a href="#" class="text-decoration-none text-white d-flex justify-content-center align-items-center">
+                <img src="images/footer/footer-news2.jpg" alt="footer-news" class="rounded mr-2">
+                <p>A Clean Website Gives More Experience<br><small class="green-highlight">22 July, 2020</small></p>                
+              </a>
+            </div>
+            <div class="news-content mb-2">
+              <a href="#" class="text-decoration-none text-white d-flex justify-content-center align-items-center">
+                <img src="images/footer/footer-news3.jpg" alt="footer-news" class="rounded mr-2">
+                <p>A Clean Website Gives More Experience<br><small class="green-highlight">22 July, 2020</small></p>                
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-gallery mb-3">
+            <h3>Destination</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/footer/footer-gallery1.jpg" alt="footer-gallery" class="img-fluid rounded mb-3">
+                <img src="images/footer/footer-gallery2.jpg" alt="footer-gallery" class="img-fluid rounded mb-3">
+              </div>
+              <div class="col-md-6">
+                <img src="images/footer/footer-gallery3.jpg" alt="footer-gallery" class="img-fluid rounded mb-3">
+                <img src="images/footer/footer-gallery4.jpg" alt="footer-gallery" class="img-fluid rounded mb-3">
+              </div>
+            </div>
+          </div>
+        </div>     
+        <div class="col-md-3">
+          <div class="book-now mb-3">
+            <h3>Quick Contact!</h3>
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control bg-dark text-secondary border-0" placeholder="Enter Your Email Address...">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control  bg-dark text-secondary border-0" placeholder="Your Message..." rows="3"></textarea>
+              </div>
+              <div class="div text-center">
+                <button type="submit" class="btn btn-success w-100">SEND</button>
+              </div>
+            </form>
+            <h3 class="mt-2">Follow Us</h3>
+            <div class="social-icon text-white">            
+              <a href=""><i class="fab fa-facebook-f text-white mx-2"></i></a>
+              <a href=""><i class="fab fa-instagram text-white mx-2"></i></a>
+              <a href=""><i class="fab fa-twitter text-white mx-2"></i></a>
+              <a href=""><i class="fab fa-linkedin-in text-white mx-2"></i></a>
+              <a href=""><i class="fab fa-youtube text-white mx-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="bg-white">
+      <div class="row text-sm-center text-xs-center">
+        <div class="col-md-6 col-sm-12 copyright mb-sm-3 mb-xs-5">
+          <small>All Rights Reserved &copy; 2020 | Designed by <span class="green-highlight">Asima</span></small>
+        </div>
+        <div class="col-md-6 col-sm-12 mt-xs-5">
+          <div class="payicon float-right float-sm-none float-xs-none">
+            <h6 class="d-inline mr-2">We Accept</h6>
+            <img src="images/footer/payicon01.png" alt="payicon">
+            <img src="images/footer/payicon02.png" alt="payicon">
+            <img src="images/footer/payicon03.png" alt="payicon">
+            <img src="images/footer/payicon04.png" alt="payicon">
+            <img src="images/footer/payicon05.png" alt="payicon">
+            <img src="images/footer/payicon06.png" alt="payicon">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--------- footer-area End ----------->
+  <!-- Js Code start -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <!-- Js Code end -->
+</body>
+
+</html>

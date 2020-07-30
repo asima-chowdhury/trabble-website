@@ -1,0 +1,418 @@
+/*
+    Name: Travel website
+    Description: One page website.There are nav, slider, about, gallery , blog, contact ,footer section
+    Developer: Asima Chowdhury
+*/
+
+/*-------------- Reuseable code start ----------------*/
+body{
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3{
+    font-family: 'Lobster', cursive;
+}
+.padding-bt-58{
+    padding: 58px 0;
+}
+.padding-bt-100{
+    padding: 100px 0;
+}
+h1 {
+    font-size: 64px;
+}
+h2 {
+    font-size: 40px;
+}
+.green-highlight{
+    color: #37b721;
+}
+.black-highlight{    
+    color: #454545;
+}
+.orange-highlight{
+    color: #f17b37;
+}
+.bg-green{
+    background-color: #37b721;
+}
+.bg-blue{
+    background-color: #243856;
+}
+.bg-orange{
+    background-color: #f17b37;
+}
+.custom-button{
+    padding: 8px 35px;
+}
+.bg-image{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.bg-image::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+}
+/*-------------- Reuseable code end ----------------*/
+/*----------- Navigation-area Start -----------*/
+.navigation-area li a{
+    font-weight: 600;
+    transition: 1s;
+    border-bottom: 2px solid transparent;
+}
+.navigation-area li a:hover{    
+    border-bottom:2px solid #37b721;
+    color: #37b721!important;
+}
+/*----------- Navigation-area End -----------*/
+/*----------- slider-area Start -----------*/
+.dark::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .6;
+}
+/*----------- slider-area End -----------*/
+/*----------- welcome-area Start -----------*/
+.section-title{
+    position: relative;
+    background-image: url(../images/line-green.png);
+    background-repeat: no-repeat;    
+    background-position: center bottom;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.section-title-red{
+    background-image: url(../images/line-red.png);
+}
+.section-title::before{
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 1px;
+    bottom: 4px;
+    left: 20%;
+    background-color: #454545;
+}
+.section-title::after{
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 1px;
+    bottom: 4px;
+    right: 20%;
+    background-color: #454545;
+}
+.section-title-white::before, .section-title-white::after{
+    background-color: #fff;
+}
+.welcome-area .welcome-area-image .overlay-image {
+    bottom: -40px;
+    height: auto;
+    position: absolute;
+    right: 5px;
+    width: 65%;
+    max-width: 100%;
+}
+/*----------- welcome-area End -----------*/
+/*----------- package-area Start -----------*/
+.package-area{
+    background-image: url("../images/packages/package-bg.jpg");
+}
+.package-area::before , .single-testimonial::before{
+    background: rgba(0, 0, 0, 0.5);
+}
+.single-package{
+    border: none;
+    overflow: hidden;
+}
+.package-place, .blog-img{    
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.single-package:hover .package-place, .single-blog:hover .blog-img{
+    transform: scale(1);
+}
+.package-ratings-review{
+    border-top: 1px solid #37b721;
+}
+.package-price{
+    position: absolute;
+    top: 15px;
+    font-size: 20px;
+    padding: 5px 30px;
+    left: 15px;
+}
+/*----------- package-area End -----------*/
+/*----------- popular-destinations-area Start -----------*/
+.single-destination{
+    position: relative;
+}
+.destination-img img{
+    width: 100%;
+}
+.destination-article{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transform: rotate(0) scale(0);
+    transition:  .5s;
+}
+.single-destination:hover .destination-article{
+    opacity: 1;
+    visibility:visible;
+    transform: rotate(360deg) scale(1);
+}
+/*----------- popular-destinations-area End -----------*/
+/*-----------  discount-package-area Start -----------*/
+.discount-package{
+    background-image: url("../images/background/discount.jpg");
+}
+.discount-package::before , .subscribe-area::before {
+    background-image: linear-gradient(to left, transparent 0%, transparent -10%, rgba(55, 183, 33, 0.7) 100%);
+}
+/*-----------  discount-package-area End -----------*/
+/*----------- best-services-area Start -----------*/
+.single-service{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) ;   
+    transition: all ease-in-out 0.5s;
+}
+.single-service:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.single-service p{ 
+    line-height: 20px;
+    font-size: 14px;
+}
+.single-service a{
+    transition: ease-in .5s;
+}
+.single-service:hover a{
+    color: #37b721;
+}
+/*----------- best-services-area End -----------*/
+/*----------- testimonial-area Start -----------*/
+.single-testimonial{
+    background-image: url("../images/testimonial/testimonial-bg.jpg");
+    height: 400px;
+}
+.testimonial-content img{
+    width: 120px;
+    height: 120px;
+}
+/*----------- testimonial-area End -----------*/
+/*----------- gallery-area Start -----------*/
+.single-gallery{
+    position: relative;
+}
+.single-gallery img{
+    width:100%;
+}
+.single-gallery::after {
+    content:'';
+    position:absolute;
+    width:100%; 
+    height:100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.5);
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+}
+.single-gallery:hover:after {
+    opacity:1;
+}
+/*----------- gallery-area End -----------*/
+/*----------- subscribe-area Start -----------*/
+.subscribe-area{
+    background-image: url("../images/background/subscribe.jpg");
+}
+.subscribe-article{
+    width: 40%;
+}
+.subscribe-article input {
+    border-radius: 0;
+    background-image: url("../images/icons/message.png");
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+    color: #727272;
+    font-size: 14px;
+}
+.subscribe-article button{
+    border-radius: 0;
+    background-color: #f17b37;
+    border: 1px solid #f17b37;
+    padding: 5px 20px;
+    font-size: 14px;
+    transition: ease-in-out .5s;
+}
+.subscribe-article button:hover{
+    background-color: #37b721;
+    border: 1px solid #37b721;
+}
+/*----------- subscribe-area End -----------*/
+/*----------- blog-area Start -----------*/
+.single-blog{
+    overflow: hidden;
+    transition: ease-in-out .5s;
+}
+.single-blog:hover{
+    box-shadow: 0 0 30px #c5c5c5;
+}
+.blog-readMore{
+    border-top: 0;
+    background-color: white;
+}
+/*----------- blog-area End -----------*/
+/*----------- footer-area Start -----------*/
+.footer-area{
+    /* background-image: url("../images/footer/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    width: 99%; */
+    background: #2f3133 url(../images/footer/footer-bg.jpg) no-repeat scroll 99% center/cover;
+    padding: 50px 0;
+}
+/*----------- footer-area End -----------*/
+/*----------- media query start--------------*/
+/* Extra large devices (large desktops, 1200px and up) */
+@media(min-width: 1200px){
+    
+}
+/* Large devices (desktops, 920px and up) */
+@media(min-width: 920px) and (max-width:1199px){
+    .navigation-area .navbar-nav .nav-item a, .package-details p, .package-review h6, .testimonial-content p{
+        font-size: 15px;
+    }
+    .carousel-caption h1,.carousel-caption h2{
+        font-size: 40px;
+    }
+    .carousel-caption p{
+        font-size: 15px;
+    }
+    .card{
+        margin: 0!important;
+    }
+    .card-title{
+        font-size: 20px;
+    }
+    .package-price{
+        font-size: 15px;
+        padding: 5px 20px;
+    }
+    .package-ratings-review{
+        padding: 10px;
+    }
+    .package-details .details{
+        padding: 0px;
+    }
+    .single-service h5{
+        font-size: 18px;
+    }
+    .subscribe-article{
+        width: 50%;
+    }
+    .welcome-area-article p{
+        font-size: 15px;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media(min-width: 768px) and (max-width:991px){
+    section{
+        padding: 50px 0!important;
+    }
+    .navigation-area .navbar-nav .nav-item a, .carousel-caption p, .package-details p, .package-review h6, .testimonial-content p, .footer-area p, .discount-article p{
+        font-size: 15px !important;
+    }
+    .carousel-caption h1,.carousel-caption h2{
+        font-size: 40px;
+    }
+    .card{
+        margin: 0!important;
+    }
+    .card-title, .footer-area h3{
+        font-size: 20px;
+    }
+    .package-price{
+        font-size: 15px;
+        padding: 5px 20px;
+    }
+    .package-ratings-review{
+        padding: 10px;
+    }
+    .package-details .details{
+        padding: 0px;
+    }
+    .single-service h5{
+        font-size: 18px;
+    }
+    .subscribe-article{
+        width: 50%;
+    }
+    .welcome-area-article p{
+        font-size: 15px;
+    }
+    .footer-area{
+        padding: 15px 0!important;
+    }
+    .section-title h2 ,.discount-article h2{
+        font-size: 30px !important;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media(min-width: 576px) and (max-width:767px){
+    .subscribe-article{
+        width: 70%;
+    }
+    .carousel-caption h1,.carousel-caption h2{
+        font-size: 40px;
+    }
+}
+/* Extra Small devices (below 576px) */
+@media(min-width: 320px) and (max-width:575px){
+    .navigation-area .navbar-nav .nav-item a, .package-details p, .package-review h6, .footer-area p, .discount-article p, .welcome-area p ,.section-article p, .blog-body p{
+        font-size: 15px !important;
+    }
+    h2{
+        font-size: 30px!important;
+    }
+    section{
+        padding: 50px 0!important;
+    }
+    .testimonial-content p{
+        font-size: 13px;
+    }
+    .subscribe-article{
+        width: 100%;
+    }
+    .subscribe-article input{
+        font-size: 12px;
+        background-position: center right;
+    }
+    .footer-gallery img{
+        margin-right: 10px;
+    }
+}
+/*----------- media query end--------------*/
